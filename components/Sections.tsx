@@ -4,10 +4,12 @@ import styles from './sections.module.scss'
 export const Header = () => {
   return (
     <header className={styles.header}>
-      <h1>Header</h1>
+      <h1><Rounded href="/">Home</Rounded></h1>
       <nav>
         <ul>
-          <li><Rounded href="/">戻る</Rounded></li>
+          <li>Something1</li>
+          <li>Something2</li>
+          <li>Something3</li>
         </ul>
       </nav>
     </header>

@@ -4,21 +4,21 @@
   background-color: $primary-color;
   display: flex;
   overflow: hidden;
+  padding-right: 50px;
 
   nav {
     display: flex;
     align-items: center;
-    padding-left: 10px;
     width: 100%;
     ul {
       display: flex;
       width: 100%;
       padding-left: 0;
-      justify-content: space-between;
       margin: 0;
       align-items: center;
         list-style: none;
       li {
+        padding-left: 50px;
         list-style-type: none;
       }
     }
