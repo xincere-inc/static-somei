@@ -11,7 +11,10 @@ export default function Home() {
       </Head>
 
       <main>
-        <Link href="/samples">作例</Link>
+        <ol>
+          <li><Link href="/samples">コンポーネント集</Link></li>
+          <li><Link href="/somei_juku_sample">ソメイ塾</Link></li>
+        </ol>
       </main>
     </div>
   )

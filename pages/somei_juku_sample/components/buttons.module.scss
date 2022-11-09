@@ -1,0 +1,21 @@
+@import "./variables.scss";
+
+.rounded {
+  display: inline-block;
+  border: solid;
+  border-radius: 6px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  box-sizing: border-box;
+  text-decoration: none;
+  width: 100%;
+}
+.rounded:hover {
+  opacity: 0.5;
+}
+.primary {
+  color: $color-primary;
+}
+.secondary {
+  color: $color-secondary;
+}
