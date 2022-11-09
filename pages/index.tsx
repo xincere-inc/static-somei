@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -10,17 +11,7 @@ export default function Home() {
       </Head>
 
       <main>
-      <div className="row">
-        <div className="col">
-          Column1
-        </div>
-        <div className="col">
-          Column2
-        </div>
-        <div className="col">
-          Column3
-        </div>
-      </div>
+        <Link href="/samples">作例</Link>
       </main>
     </div>
   )
