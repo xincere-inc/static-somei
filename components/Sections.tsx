@@ -13,3 +13,11 @@ export const Header = () => {
     </header>
   )
 }
+
+export const Footer = () => {
+  return (
+    <footer className={styles.footer}>
+      footer
+    </footer>
+  )
+}

@@ -24,3 +24,14 @@
     }
   }
 }
+
+.footer {
+  background-color: $primary-color;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  margin-top: auto;
+}
