@@ -1,37 +1,104 @@
-@import "../styles/variables.scss";
+@import "./variables.scss";
 
 .header {
-  background-color: $primary-color;
-  display: flex;
   overflow: hidden;
-  padding-right: 50px;
+  color: $primary;
 
-  nav {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    ul {
+  @media (max-width: 768px) {
+    nav {
       display: flex;
-      width: 100%;
-      padding-left: 0;
-      margin: 0;
       align-items: center;
+      justify-content: center;
+      ul {
+        display: inline;
+        width: 100%;
+        padding-left: 0;
+        margin: 0;
+        margin-block: 0;
+        margin-inline: 0;
+        padding-inline: 0;
+        align-items: center;
+        justify-content: center;
         list-style: none;
-      li {
-        padding-left: 50px;
-        list-style-type: none;
+        li {
+          display: flex;
+          justify-content: center;
+          list-style-type: none;
+          font-family: 'Hiragino Sans';
+          font-style: normal;
+          font-weight: 200;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    nav {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      ul {
+        display: flex;
+        width: 100%;
+        padding-left: 0;
+        margin: 0;
+        align-items: center;
+        list-style: none;
+        li {
+          padding-left: 32px;
+          list-style-type: none;
+          font-family: 'Hiragino Sans';
+          font-style: normal;
+          font-weight: 200;
+          font-size: 14px;
+        }
       }
     }
   }
 }
 
+.link {
+  color: $primary;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title_wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  line-height: 52px;
+  .logo {
+    font-family: 'YuMincho';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 56px;
+    text-align: center;
+    letter-spacing: -15px;
+  }
+  .title {
+    font-family: 'YuMincho';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 15px;
+  }
+}
+
 .footer {
-  background-color: $primary-color;
   display: flex;
   overflow: hidden;
   justify-content: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   box-sizing: border-box;
   margin-top: auto;
+  color: $primary;
+  font-size: 12px;
+  font-family: YuGothic;
 }

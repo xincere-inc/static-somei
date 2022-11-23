@@ -9,7 +9,7 @@ export const Slider = ({children} : {children : JSX.Element[]}) => {
     selector: `.${styles.item}`,
     loop: true,
     slides: {
-      perView: 1.5,
+      perView: 1,
     },
     initial: 0,
     slideChanged(slider) {
@@ -26,10 +26,10 @@ export const Slider = ({children} : {children : JSX.Element[]}) => {
         { children }
         <LeftArrow instanceRef={instanceRef.current!} />
         <RightArrow instanceRef={instanceRef.current!} />
+        {loaded && instanceRef.current ? (
+          <SliderDots instanceRef={instanceRef.current!} currentSlide={currentSlide} />
+        ) : null}
       </div>
-      {loaded && instanceRef.current ? (
-        <SliderDots instanceRef={instanceRef.current!} currentSlide={currentSlide} />
-      ) : null}
     </>
   )
 }
@@ -47,9 +47,8 @@ const SliderDots = ({
 }) => {
   return (
     <div className={styles.dots}>
-      {[
-        ...Array(instanceRef.track.details.slides.length).keys(),
-      ].map((idx) => {
+      {[...Array(instanceRef.track.details.slides.length)].map((_, i) => i)
+      .map((idx) => {
         return (
           <button
             key={idx}

@@ -12,7 +12,6 @@ export default function Home() {
 
       <main>
         <ol>
-          <li><Link href="/samples">コンポーネント集</Link></li>
           <li><Link href="/somei_juku_sample">ソメイ塾</Link></li>
         </ol>
       </main>

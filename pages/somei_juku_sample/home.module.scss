@@ -1,0 +1,209 @@
+@import '../../styles/variables';
+
+.section_top {
+  margin-top: 10px;
+}
+
+.section {
+  margin-top: 40px;
+}
+
+.section_bottom {
+  margin-bottom: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 60%;
+  right: 0%;
+  display: flex;
+  justify-content: right;
+  width: 100%;
+}
+
+.triangle_base {
+  position: relative;
+  width: 5%;
+}
+
+.triangle {
+  background-image: linear-gradient(to left bottom, $secondary 0%, $secondary 50%, transparent 50%);
+  opacity: 0.4;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.overlay_text {
+  padding: 10px;
+  background-color: rgba($secondary, 0.4);
+  font-family: 'YuMincho';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  color: $white;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.bg_gray {
+  margin: 0 calc(50% - 50vw);
+  width: 100vw;
+  background-color: $gray5;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.subtitle {
+  font-family: 'Hiragino Kaku Gothic Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  color: $gray100;
+  margin: 0;
+  max-width: 330px;
+}
+
+.content {
+  margin-top: 5%;
+  font-family: 'Hiragino Kaku Gothic Pro';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  color: $gray100;
+}
+
+.button {
+  margin-top: 10%;
+  width: 100%;
+}
+
+.button_text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.overlay_card_wrapper {
+  display: flex;
+  position: relative;
+  margin: 10px;
+}
+
+.overlay_card {
+  position: relative;
+  box-sizing: border-box;
+  padding: 15px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba($gray70, 0.4);
+}
+
+.overlay_card_title {
+  font-family: 'Hiragino Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: $white;
+  padding-top: 32px;
+  text-align: center;
+}
+
+.overlay_card_content {
+  font-family: 'Hiragino Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  color: $white;
+  padding-top: 16px;
+}
+
+.overlay_card_button {
+  margin-top: auto;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.reserve {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+}
+
+.reserve_title {
+  font-family: 'Hiragino Kaku Gothic Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+  margin: 0;
+}
+
+.reserve_button {
+  margin-top: 24px;
+  width: 100%;
+}
+
+.reserve_contact {
+  margin-top: 16px;
+  text-align: center;
+  font-family: 'Hiragino Kaku Gothic Pro';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.info_title {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: 769px) {
+    justify-content: end;
+  }
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.info_list {
+  margin-block-start: 2em;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  list-style: none;
+  font-family: 'Hiragino Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: -1px;
+}
+
+.info_list_item {
+  margin-top: 8px;
+  font-family: 'Hiragino Sans';
+}
+
+.info_content {
+  margin-left: 24px;
+  color: $lightblue;
+}

@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 .wrapper {
   -webkit-touch-callout: none;
   -webkit-tap-highlight-color: transparent;
@@ -24,13 +26,16 @@
   display: flex;
   padding: 10px 0;
   justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
 }
 
 .dot {
   border: none;
   width: 10px;
   height: 10px;
-  background: #c5c5c5;
+  background: $white;
   border-radius: 50%;
   margin: 0 5px;
   padding: 5px;
@@ -38,7 +43,7 @@
 }
 
 .active {
-  background: #000;
+  background: $lightblue;
 }
 
 .arrow {
@@ -48,7 +53,7 @@
   top: 50%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
-  fill: #fff;
+  fill: $gray70;
   cursor: pointer;
 }
 

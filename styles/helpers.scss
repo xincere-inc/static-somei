@@ -1,0 +1,52 @@
+@import "./variables";
+
+$button_colors: (
+  "primary": $primary,
+  "secondary": $secondary
+);
+
+%btn {
+  display: flex;
+  justify-content: center;
+  border-radius: 6px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  box-sizing: border-box;
+  text-decoration: none;
+  width: 100%;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+@each $name, $color in $button_colors {
+  .btn-#{$name} {
+    @extend %btn;
+    background-color: $color;
+    color: $white;
+  }
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+}
+
+.overlay {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.img {
+  width: 100%;
+  min-height: 300px;
+  object-fit: conver;
+}
