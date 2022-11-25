@@ -1,6 +1,11 @@
+@import '../styles/variables';
+
 .wrapper {
   position: relative;
-  width:fit-content;
+  width: fit-content;
+  @media (max-width: $breakpoint) {
+    margin-top: 20px;
+  }
 }
 
 .text {
