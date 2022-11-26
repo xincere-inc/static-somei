@@ -16,55 +16,55 @@ const Page = () => {
         <Slider>
           <SliderItem>
             <div className="container">
-              <img src={image1.src} className="img" alt="" />
+              <img src={image1.src} className={styles.slider_img} alt="" />
               <div className="overlay">
                 <div className={styles.overlay}>
                   <div className={styles.triangle_base}><div className={styles.triangle}/></div>
-                  <div className={styles.overlay_text}>全科目の先生が一人の生徒状況、<br/>得意不得意、医師への資質などを情報共有していくスタイル</div>
+                  <div className={styles.overlay_text}>全科目の先生が一人の<br className={styles.with_mobile} />生徒状況、<br className={styles.without_mobile} />得意不得意、<br className={styles.with_mobile} />医師への資質などを<br className={styles.with_mobile} />情報共有していくスタイル</div>
                 </div>
               </div>
             </div>
           </SliderItem>
           <SliderItem>
             <div className="container">
-              <img src={image1.src} className="img" alt="" />
+              <img src={image1.src} className={styles.slider_img} alt="" />
               <div className="overlay">
                 <div className={styles.overlay}>
                   <div className={styles.triangle_base}><div className={styles.triangle}/></div>
-                  <div className={styles.overlay_text}>全科目の先生が一人の生徒状況、<br/>得意不得意、医師への資質などを情報共有していくスタイル</div>
+                  <div className={styles.overlay_text}>全科目の先生が一人の<br className={styles.with_mobile} />生徒状況、<br className={styles.without_mobile} />得意不得意、<br className={styles.with_mobile} />医師への資質などを<br className={styles.with_mobile} />情報共有していくスタイル</div>
                 </div>
               </div>
             </div>
           </SliderItem>
           <SliderItem>
             <div className="container">
-              <img src={image1.src} className="img" alt="" />
+              <img src={image1.src} className={styles.slider_img} alt="" />
               <div className="overlay">
                 <div className={styles.overlay}>
                   <div className={styles.triangle_base}><div className={styles.triangle}/></div>
-                  <div className={styles.overlay_text}>全科目の先生が一人の生徒状況、<br/>得意不得意、医師への資質などを情報共有していくスタイル</div>
+                  <div className={styles.overlay_text}>全科目の先生が一人の<br className={styles.with_mobile} />生徒状況、<br className={styles.without_mobile} />得意不得意、<br className={styles.with_mobile} />医師への資質などを<br className={styles.with_mobile} />情報共有していくスタイル</div>
                 </div>
               </div>
             </div>
           </SliderItem>
           <SliderItem>
             <div className="container">
-              <img src={image1.src} className="img" alt="" />
+              <img src={image1.src} className={styles.slider_img} alt="" />
               <div className="overlay">
                 <div className={styles.overlay}>
                   <div className={styles.triangle_base}><div className={styles.triangle}/></div>
-                  <div className={styles.overlay_text}>全科目の先生が一人の生徒状況、<br/>得意不得意、医師への資質などを情報共有していくスタイル</div>
+                  <div className={styles.overlay_text}>全科目の先生が一人の<br className={styles.with_mobile} />生徒状況、<br className={styles.without_mobile} />得意不得意、<br className={styles.with_mobile} />医師への資質などを<br className={styles.with_mobile} />情報共有していくスタイル</div>
                 </div>
               </div>
             </div>
           </SliderItem>
           <SliderItem>
             <div className="container">
-              <img src={image1.src} className="img" alt="" />
+              <img src={image1.src} className={styles.slider_img} alt="" />
               <div className="overlay">
                 <div className={styles.overlay}>
                   <div className={styles.triangle_base}><div className={styles.triangle}/></div>
-                  <div className={styles.overlay_text}>全科目の先生が一人の生徒状況、<br/>得意不得意、医師への資質などを情報共有していくスタイル</div>
+                  <div className={styles.overlay_text}>全科目の先生が一人の<br className={styles.with_mobile} />生徒状況、<br className={styles.without_mobile} />得意不得意、<br className={styles.with_mobile} />医師への資質などを<br className={styles.with_mobile} />情報共有していくスタイル</div>
                 </div>
               </div>
             </div>
@@ -78,7 +78,7 @@ const Page = () => {
           </div>
           <div className="col-12 col-md-6">
             <div className={styles.wrapper}>
-              <CherryText><h2 className={styles.subtitle}>素質に体質に合わせた授業展開、宿題の提供</h2></CherryText>
+              <CherryText><h2 className={styles.subtitle}>素質に体質に合わせた<br/>授業展開、宿題の提供</h2></CherryText>
               <div className={styles.content}>
                 この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。
               </div>
@@ -157,11 +157,11 @@ const Page = () => {
           </div>
           <div className="col-12 col-md-8">
             <ul className={styles.info_list}>
-              <li className={styles.info_list_item}>2022/01/01<span className={styles.info_content}>トップページ内にて、TREEの紹介ムービーを公開しました。</span></li>
-              <li className={styles.info_list_item}>2022/01/01<span className={styles.info_content}>移転情報：2022年1月11日より新教室がスタートします。</span></li>
-              <li className={styles.info_list_item}>2022/01/01<span className={styles.info_content}>移転情報：2022年1月11日より新教室がスタートします。</span></li>
-              <li className={styles.info_list_item}>2022/01/01<span className={styles.info_content}>新宿店オープン！！</span></li>
-              <li className={styles.info_list_item}>2022/01/01<span className={styles.info_content}>トップページ内にて、TREEの紹介ムービーを公開しました。</span></li>
+              <li className={styles.info_list_item}><span className={styles.info_list_date}>2022/01/01</span><Link className={styles.info_content} href="#">トップページ内にて、TREEの紹介ムービーを公開しました。</Link></li>
+              <li className={styles.info_list_item}><span className={styles.info_list_date}>2022/01/01</span><Link className={styles.info_content} href="#">移転情報：2022年1月11日より新教室がスタートします。</Link></li>
+              <li className={styles.info_list_item}><span className={styles.info_list_date}>2022/01/01</span><Link className={styles.info_content} href="#">移転情報：2022年1月11日より新教室がスタートします。</Link></li>
+              <li className={styles.info_list_item}><span className={styles.info_list_date}>2022/01/01</span><Link className={styles.info_content} href="#">新宿店オープン！！</Link></li>
+              <li className={styles.info_list_item}><span className={styles.info_list_date}>2022/01/01</span><Link className={styles.info_content} href="#">トップページ内にて、TREEの紹介ムービーを公開しました。</Link></li>
             </ul>
           </div>
         </div>
