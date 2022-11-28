@@ -1,12 +1,21 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { useState } from 'react'
 import styles from './sections.module.scss'
 
 export const Header = () => {
   const [open, setOpen] = useState<Boolean>(false)
 
+  const currentUrl = useRouter().pathname
+
   const changeHambugerState = () => {
     setOpen((prevState) => !prevState)
+  }
+
+  const linkObject = (link: string, text: string) => {
+    return link === currentUrl
+      ? <Link href={link} onClick={changeHambugerState} className={`${styles.nav_link} ${styles.current_nav_link}`}>{text}</Link>
+      : <Link href={link} onClick={changeHambugerState} className={styles.nav_link}>{text}</Link>
   }
 
   return (
@@ -23,10 +32,10 @@ export const Header = () => {
         </div>
         <nav className={open ? styles.nav_opened : styles.nav_closed}>
           <ul>
-            <li><Link href="/somei_juku_sample/about" onClick={changeHambugerState} className={styles.nav_link}>ソメイ塾について</Link></li>
-            <li><Link href="/somei_juku_sample/curriculum" onClick={changeHambugerState} className={styles.nav_link}>授業案内</Link></li>
-            <li><Link href="/somei_juku_sample/teacher" onClick={changeHambugerState} className={styles.nav_link}>講師案内</Link></li>
-            <li><Link href="/somei_juku_sample/plan" onClick={changeHambugerState} className={styles.nav_link}>料金プラン</Link></li>
+            <li>{linkObject("/somei_juku_sample/about", "ソメイ塾について")}</li>
+            <li>{linkObject("/somei_juku_sample/curriculum", "授業案内")}</li>
+            <li>{linkObject("/somei_juku_sample/teacher", "講師案内")}</li>
+            <li>{linkObject("/somei_juku_sample/plan", "料金プラン")}</li>
           </ul>
         </nav>
       </div>

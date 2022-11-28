@@ -263,3 +263,25 @@
     display: none;
   }
 }
+
+.teacher_row {
+  padding-bottom: 24px;
+}
+
+.teacher_name {
+  font-size: 24px;
+  margin: 0;
+}
+
+.teacher_content_wrapper {
+  padding-left: 25px;
+}
+
+.teacher_content {
+  margin-top: 15px;
+  font-family: 'Hiragino Kaku Gothic Pro';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  color: $gray100;
+}
