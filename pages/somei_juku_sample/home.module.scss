@@ -266,6 +266,9 @@
 
 .teacher_content_wrapper {
   padding-left: 25px;
+  @media (max-width: $breakpoint) {
+    padding-left: 0;
+  }
 }
 
 .teacher_row {
@@ -275,7 +278,17 @@
     .teacher_content_wrapper {
       padding-left: 0;
       padding-right: 24px;
+      @media (max-width: $breakpoint) {
+        padding-right: 0;
+      }
     }
+  }
+}
+
+.teacher_name_wrapper {
+  @media (max-width: $breakpoint) {
+    display: flex;
+    justify-content: center;
   }
 }
 
