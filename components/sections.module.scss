@@ -9,11 +9,13 @@
   width: 100%;
   z-index: 10;
   background-color: white;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 5%);
+
   .header_content_wrapper {
     padding: 0 5%;
     display: flex;
 
-    @media (max-width: 768px) {
+    @media (max-width: $breakpoint) {
       align-items: center;
       justify-content: space-between;
       nav {
@@ -70,7 +72,11 @@
       }
     }
 
+<<<<<<< HEAD
     @media (min-width: 768px) {
+=======
+    @media (min-width: $breakpoint) {
+>>>>>>> 29612ae896e061570ce1cdba10da3cd141805629
       nav {
         margin-left: auto;
         display: flex;
