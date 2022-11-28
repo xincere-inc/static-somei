@@ -26,6 +26,20 @@
   }
 }
 
+.overlay_left {
+  position: absolute;
+  top: 60%;
+  left: 0%;
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  @media (max-width: $breakpoint) {
+    top: auto;
+    bottom: 30px;
+    display: block;
+  }
+}
+
 .triangle_base {
   position: relative;
   width: 5%;
@@ -93,6 +107,15 @@
   @media (max-width: $breakpoint) {
     font-size: 25px;
   }
+}
+
+.smallsubtitle {
+  font-family: 'Hiragino Kaku Gothic Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  color: $gray100;
+  margin: 0;
 }
 
 .content {
@@ -252,6 +275,17 @@
   }
 }
 
+.header_image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: left top;
+  @media (max-width: $breakpoint) {
+    max-height: 240px;
+  }
+}
+
+
 .with_mobile {
   @media (min-width: $breakpoint) {
     display: none;
@@ -292,3 +326,4 @@
   font-size: 14px;
   color: $gray100;
 }
+
