@@ -28,7 +28,7 @@
 
 .overlay_left {
   position: absolute;
-  top: 60%;
+  top: 30%;
   left: 0%;
   display: flex;
   justify-content: left;
@@ -320,6 +320,25 @@
 
 .teacher_content {
   margin-top: 15px;
+  font-family: 'Hiragino Kaku Gothic Pro';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  color: $gray100;
+}
+
+.about_headline_top {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.about_headline {
+  font-size: 24px;
+  margin-top: 5%;
+}
+
+.about_content {
+  margin-top: 10px;
   font-family: 'Hiragino Kaku Gothic Pro';
   font-style: normal;
   font-weight: 200;
