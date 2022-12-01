@@ -20,7 +20,7 @@ const Page = () => {
           </div>
           <div className="col-12 col-md-8">
             <div className={styles.teacher_content_wrapper}>
-              <SingleLineCherryText><p className={styles.teacher_name}>田中 太郎</p></SingleLineCherryText>
+              <div  className={styles.teacher_name_wrapper}><SingleLineCherryText><p className={styles.teacher_name}>田中 太郎</p></SingleLineCherryText></div>
               <div className={styles.teacher_content}>
                 この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。<br/><br/>
                 この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。<br/><br/>
@@ -35,7 +35,7 @@ const Page = () => {
           </div>
           <div className="col-12 col-md-8">
             <div className={styles.teacher_content_wrapper}>
-              <SingleLineCherryText><p className={styles.teacher_name}>田中 太郎</p></SingleLineCherryText>
+              <div  className={styles.teacher_name_wrapper}><SingleLineCherryText><p className={styles.teacher_name}>田中 太郎</p></SingleLineCherryText></div>
               <div className={styles.teacher_content}>
                 この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。<br/><br/>
                 この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。<br/><br/>
@@ -50,7 +50,7 @@ const Page = () => {
           </div>
           <div className="col-12 col-md-8">
             <div className={styles.teacher_content_wrapper}>
-              <SingleLineCherryText><p className={styles.teacher_name}>田中 太郎</p></SingleLineCherryText>
+              <div  className={styles.teacher_name_wrapper}><SingleLineCherryText><p className={styles.teacher_name}>田中 太郎</p></SingleLineCherryText></div>
               <div className={styles.teacher_content}>
                 この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。<br/><br/>
                 この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。<br/><br/>

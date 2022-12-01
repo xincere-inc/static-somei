@@ -10,6 +10,8 @@
   object-fit: cover;
   @media (max-width: $breakpoint) {
     min-height: 240px;
+    width: 100vw;
+    margin-left: -5vw;
   }
 }
 
