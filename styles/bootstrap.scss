@@ -3,10 +3,9 @@
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/maps";
 
-$grid-gutter-width: 0;
+$grid-gutter-width: 10;
 
 @import "../node_modules/bootstrap/scss/grid";
-
 body {
   margin: 0;
 }

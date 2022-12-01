@@ -71,3 +71,13 @@ $button_colors: (
     max-height: 240px;
   }
 }
+
+.img_curriculum {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 5px;
+  @media (max-width: $breakpoint) {
+    max-height: 240px;
+  }
+}

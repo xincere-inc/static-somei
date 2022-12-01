@@ -387,3 +387,17 @@
     }
   }
 }
+
+.curriculum_row {
+  padding-bottom: 36px;
+  &:nth-child(2n) {
+    flex-direction: row-reverse;
+    .about_wrapper {
+      padding-left: 0;
+      padding-right: 24px;
+      @media (max-width: $breakpoint) {
+        padding-right: 0;
+      }
+    }
+  }
+}
