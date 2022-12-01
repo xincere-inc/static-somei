@@ -1,0 +1,40 @@
+@import '../styles/variables';
+
+.title_image_wrapper {
+  position: relative;
+}
+
+.title_img {
+  width: 100%;
+  min-height: 450px;
+  object-fit: cover;
+  @media (max-width: $breakpoint) {
+    min-height: 240px;
+    width: 100vw;
+    margin-left: -5vw;
+  }
+}
+
+.title {
+  font-family: 'Hiragino Mincho Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  color: $gray100;
+  letter-spacing: 4px;
+  margin: 0;
+  @media (max-width: $breakpoint) {
+    font-size: 32px;
+  }
+}
+
+.cherryText_wrapper {
+  position: absolute;
+  left: 32px;
+  top: 50%;
+  margin-top: -10px;
+  transform: translateY(-50%);
+  @media (max-width: $breakpoint) {
+    left: 16px;
+  }
+}
