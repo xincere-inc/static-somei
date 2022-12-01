@@ -329,38 +329,14 @@
   color: $gray100;
 }
 
-.about_wrapper_image_right {
-  display: block;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  padding-left: 32px;
-  @media (max-width: $breakpoint) {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-.about_wrapper_image_left {
-  display: block;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  padding-right: 32px;
-  @media (max-width: $breakpoint) {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
 .about_wrapper {
   display: block;
   flex-direction: column;
   align-items: center;
   height: 100%;
+  padding-left: 24px;
   @media (max-width: $breakpoint) {
     padding-left: 0;
-    padding-right: 0;
   }
 }
 
@@ -369,6 +345,9 @@
   text-align: left;
   font-size: 32px;
   margin-top: 0;
+  @media (max-width: $breakpoint) {
+    font-size: 24px;
+  }
 }
 
 .about_headline_middle {
@@ -387,8 +366,6 @@
 
 .about_content {
   display: block;
-  width: 100%;
-  object-fit: cover;
   margin-top: 10px;
   font-family: 'Hiragino Kaku Gothic Pro';
   font-style: normal;
@@ -397,6 +374,18 @@
   color: $gray100;
 }
 
-
+.about_row {
+  padding-bottom: 36px;
+  &:nth-child(2n+1) {
+    flex-direction: row-reverse;
+    .about_wrapper {
+      padding-left: 0;
+      padding-right: 24px;
+      @media (max-width: $breakpoint) {
+        padding-right: 0;
+      }
+    }
+  }
+}
 
 
