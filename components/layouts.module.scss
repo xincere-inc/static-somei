@@ -12,3 +12,19 @@
     padding-right: 5%;
   }
 }
+
+.cv_tag_wrapper {
+  position: fixed;
+  top: 50%;
+  right: 80px;
+  z-index: 20;
+  transform: translateY(-50%);
+
+  @media (max-width: $breakpoint) {
+    bottom: 20px;
+    left: 50%;
+    right: auto;
+    top: auto;
+    transform: translateX(-50%);
+  }
+}

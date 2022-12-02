@@ -1,0 +1,56 @@
+@import '../styles/variables';
+
+.cv_tag_wrapper {
+  width: 35px;
+  box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
+  @media (max-width: $breakpoint) {
+    width: auto;
+    height: 30px;
+  }
+}
+
+.cv_tag_link {
+  text-decoration: none;
+  display: block;
+  @media (max-width: $breakpoint) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.cv_tag_top_box {
+  height: 35px;
+  background-color: #FF6565;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  line-height: 30px;
+  @media (max-width: $breakpoint) {
+    width: 30px;
+    height: 30px;
+    line-height: 25px;;
+  }
+}
+
+.cv_tag_text_wrapper {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.cv_tag_text {
+  display: table-cell;
+  font-size: 20px;
+  writing-mode: vertical-rl;
+  margin: 0;
+  padding: 20px 0;
+  color: $gray100;
+  @media (max-width: $breakpoint) {
+    writing-mode: unset;
+    padding: 0 20px;
+    font-size: 18px;
+  }
+}
