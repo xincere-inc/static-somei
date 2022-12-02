@@ -26,20 +26,6 @@
   }
 }
 
-.overlay_left {
-  position: absolute;
-  top: 30%;
-  left: 0%;
-  display: flex;
-  justify-content: left;
-  width: 100%;
-  @media (max-width: $breakpoint) {
-    top: auto;
-    bottom: 30px;
-    display: block;
-  }
-}
-
 .triangle_base {
   position: relative;
   width: 5%;
