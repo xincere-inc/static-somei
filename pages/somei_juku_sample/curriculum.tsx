@@ -16,52 +16,52 @@ const Page = () => {
       <section className={styles.section}>
         <div className={`row ${styles.curriculum_row}`}>
           <div className="col-12 col-md-6">
-            <img src={card_c1.src} className="img_curriculum" alt="" />
+            <div className={styles.content_wrapper}>
+              <img src={card_c1.src} className="img" alt="" />
+            </div>
           </div>
           <div className="col-12 col-md-6">
-            <div className={styles.about_wrapper}>
-              <SingleLineCherryText><p className={styles.about_headline_top}>チーム教育</p></SingleLineCherryText>
-              <div className={styles.about_content}>
-                この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。
-              </div>
-              <SingleLineCherryText><p className={styles.about_headline_middle}>この塾はこんなことをしています</p></SingleLineCherryText>
-              <div className={styles.about_content}>
-                この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。<br></br><p></p>この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。
-              </div>
+            <SingleLineCherryText><p className={styles.content_headline_top}>チーム教育</p></SingleLineCherryText>
+            <div className={styles.content}>
+              この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。
+            </div>
+            <SingleLineCherryText><p className={styles.content_headline_middle}>この塾はこんなことをしています</p></SingleLineCherryText>
+            <div className={styles.content}>
+              この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。<br></br><p></p>この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。
             </div>
           </div>
         </div>
         <div className={`row ${styles.curriculum_row}`}>
           <div className="col-12 col-md-6">
-            <img src={card_c2.src} className="img_curriculum" alt="" />
+            <div className={styles.content_wrapper}>
+              <img src={card_c2.src} className="img" alt="" />
+            </div>
           </div>
           <div className="col-12 col-md-6">
-            <div className={styles.about_wrapper}>
-              <SingleLineCherryText><p className={styles.about_headline_top}>オーダーメイド学習</p></SingleLineCherryText>
-              <div className={styles.about_content}>
-                この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。
-              </div>
-              <SingleLineCherryText><p className={styles.about_headline_middle}>この塾はこんなことをしています</p></SingleLineCherryText>
-              <div className={styles.about_content}>
-                この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。<br></br><p></p>この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。
-              </div>
+            <SingleLineCherryText><p className={styles.content_headline_top}>オーダーメイド学習</p></SingleLineCherryText>
+            <div className={styles.content}>
+              この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。
+            </div>
+            <SingleLineCherryText><p className={styles.content_headline_middle}>この塾はこんなことをしています</p></SingleLineCherryText>
+            <div className={styles.content}>
+              この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。<br></br><p></p>この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。
             </div>
           </div>
         </div>
         <div className={`row ${styles.curriculum_row}`}>
           <div className="col-12 col-md-6">
-            <img src={card_c3.src} className="img_curriculum" alt="" />
+            <div className={styles.content_wrapper}>
+              <img src={card_c3.src} className="img" alt="" />
+            </div>
           </div>
           <div className="col-12 col-md-6">
-            <div className={styles.about_wrapper}>
-              <SingleLineCherryText><p className={styles.about_headline_top}>塾のコンセプト</p></SingleLineCherryText>
-              <div className={styles.about_content}>
-                この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。
-              </div>
-              <SingleLineCherryText><p className={styles.about_headline_middle}>この塾はこんなことをしています</p></SingleLineCherryText>
-              <div className={styles.about_content}>
-                この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。<br></br><p></p>この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。
-              </div>
+            <SingleLineCherryText><p className={styles.content_headline_top}>塾のコンセプト</p></SingleLineCherryText>
+            <div className={styles.content}>
+              この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。
+            </div>
+            <SingleLineCherryText><p className={styles.content_headline_middle}>この塾はこんなことをしています</p></SingleLineCherryText>
+            <div className={styles.content}>
+              この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。<br></br><p></p>この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。この塾はこんなことをしています。
             </div>
           </div>
         </div>
