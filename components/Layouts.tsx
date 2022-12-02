@@ -1,6 +1,6 @@
 import { Footer, Header } from './Sections'
 import styles from './layouts.module.scss'
-import { CvTag } from './Cvtag'
+import { CvTag } from './CvTag'
 
 const Layout = ({children} : {children: JSX.Element}) => {
   return (

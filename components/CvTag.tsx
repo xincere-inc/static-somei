@@ -9,9 +9,8 @@ export const CvTag = ({
   link: string,
   content: string
 }) => {
+
   const currentUrl = useRouter().pathname
-  console.log(currentUrl)
-  console.log(link)
 
   const cvTagObject = <div className={styles.cv_tag_wrapper}>
                         <Link className={styles.cv_tag_link} href={link}>
