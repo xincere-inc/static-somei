@@ -1,7 +1,30 @@
+@import '../styles/variables';
+
 .wrapper {
   display: flex;
   flex-flow: column;
   min-height: 100vh;
   padding-left: 15%;
   padding-right: 15%;
+
+  @media (max-width: $breakpoint) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.cv_tag_wrapper {
+  position: fixed;
+  top: 50%;
+  right: 80px;
+  z-index: 20;
+  transform: translateY(-50%);
+
+  @media (max-width: $breakpoint) {
+    bottom: 20px;
+    left: 50%;
+    right: auto;
+    top: auto;
+    transform: translateX(-50%);
+  }
 }

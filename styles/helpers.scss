@@ -48,5 +48,26 @@ $button_colors: (
 .img {
   width: 100%;
   min-height: 300px;
-  object-fit: conver;
+  object-fit: cover;
+  @media (max-width: $breakpoint) {
+    max-height: 240px;
+  }
+}
+
+.img_about1 {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  @media (max-width: $breakpoint) {
+    max-height: 240px;
+  }
+}
+
+.img_about3 {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  @media (max-width: $breakpoint) {
+    max-height: 240px;
+  }
 }
