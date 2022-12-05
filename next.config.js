@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  assetPrefix: process.env.GITHUB_ACTIONS && "/static-somei",
+  basePath: process.env.GITHUB_ACTIONS && "/static-somei",
   trailingSlash: true,
   reactStrictMode: true,
   swcMinify: true,
