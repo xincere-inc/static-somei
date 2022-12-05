@@ -1,4 +1,4 @@
-import styles from './titleImage.module.scss'
+import styles from './TitleImage.module.scss'
 import { CherryText } from "./Texts"
 
 export const TitleImage = ({

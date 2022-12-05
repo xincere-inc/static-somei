@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubunts-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
@@ -18,8 +18,16 @@ jobs:
         with:
           node-version: 16
 
-      - name: Install dependecies
-        run: npm ci
+      - name: Cache dependencies
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: install
+        run: npm install --frozen-lockfile
 
       - name: Build
         run: npm run build
@@ -27,9 +35,11 @@ jobs:
       - name: export static html
         run: npm run export
 
+      - name: add nojekyll
+        run: touch ./docs/.nojekyll
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
           push_dir: out
