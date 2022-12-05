@@ -1,11 +1,11 @@
-import Layout from "../../components/Layouts"
-import { TitleImage } from "../../components/TitleImage"
+import Layout from "../components/Layouts"
+import { TitleImage } from "../components/TitleImage"
 import Image from './assets/teacher_title_image.png'
 import styles from './home.module.scss'
 import Card1 from './assets/teacher_card1.png'
 import Card2 from './assets/teacher_card2.png'
 import Card3 from './assets/teacher_card3.png'
-import { SingleLineCherryText } from "../../components/Texts"
+import { SingleLineCherryText } from "../components/Texts"
 
 const Page = () => {
   return (

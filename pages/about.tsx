@@ -1,6 +1,6 @@
-import Layout from "../../components/Layouts"
-import { TitleImage } from "../../components/TitleImage"
-import { SingleLineCherryText } from "../../components/Texts"
+import Layout from "../components/Layouts"
+import { TitleImage } from "../components/TitleImage"
+import { SingleLineCherryText } from "../components/Texts"
 import Image from './assets/about_title_image.png'
 import styles from './home.module.scss'
 import card_a1 from './assets/about_somei_1.png'
