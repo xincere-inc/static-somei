@@ -1,5 +1,5 @@
-import Layout from "../../components/Layouts"
-import { TitleImage } from "../../components/TitleImage"
+import Layout from "../components/Layouts"
+import { TitleImage } from "../components/TitleImage"
 import Image from './assets/curriculum_title_image.png'
 import styles from './home.module.scss'
 
