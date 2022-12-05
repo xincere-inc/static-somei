@@ -21,7 +21,7 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.header_content_wrapper}>
-        <Link href="/somei_juku_sample" className={styles.link}>
+        <Link href="/" className={styles.link}>
           <h1 className={styles.title_wrapper}>
             <span className={styles.logo}>ロゴ</span>
             <span className={styles.title}>予備校</span>
@@ -32,10 +32,9 @@ export const Header = () => {
         </div>
         <nav className={open ? styles.nav_opened : styles.nav_closed}>
           <ul>
-            <li>{linkObject("/somei_juku_sample/about", "ソメイ塾について")}</li>
-            <li>{linkObject("/somei_juku_sample/curriculum", "授業案内")}</li>
-            <li>{linkObject("/somei_juku_sample/teacher", "講師案内")}</li>
-            <li>{linkObject("/somei_juku_sample/plan", "料金プラン")}</li>
+            <li>{linkObject("/about", "ソメイ塾について")}</li>
+            <li>{linkObject("/curriculum", "授業案内")}</li>
+            <li>{linkObject("/teacher", "講師案内")}</li>
           </ul>
         </nav>
       </div>
