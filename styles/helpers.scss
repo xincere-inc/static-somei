@@ -2,7 +2,7 @@
 
 $button_colors: (
   "primary": $primary,
-  "secondary": $secondary
+  "secondary": $secondary,
 );
 
 %btn {
@@ -47,7 +47,7 @@ $button_colors: (
 
 .img {
   width: 100%;
-  min-height: 300px;
+  max-height: 400px;
   object-fit: cover;
   border-radius: 5px;
   @media (max-width: $breakpoint) {

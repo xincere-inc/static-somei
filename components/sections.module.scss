@@ -1,4 +1,4 @@
-@import '../styles/variables';
+@import "../styles/variables";
 
 .header {
   overflow: hidden;
@@ -16,6 +16,7 @@
     display: flex;
 
     @media (max-width: $breakpoint) {
+      height: 48px;
       align-items: center;
       justify-content: space-between;
       nav {
@@ -27,7 +28,7 @@
         margin: -600px 0 0 0;
         transition-duration: 0.5s;
         z-index: 9;
-        box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
+        box-shadow: 1px 0 6px rgba(0, 0, 0, 0.2);
         ul {
           display: inline;
           width: 100%;
@@ -43,7 +44,7 @@
             display: flex;
             justify-content: center;
             list-style-type: none;
-            font-family: 'Hiragino Sans';
+            font-family: "Hiragino Sans";
             font-style: normal;
             font-weight: 200;
             font-size: 20px;
@@ -86,7 +87,7 @@
           li {
             padding-left: 32px;
             list-style-type: none;
-            font-family: 'Hiragino Sans';
+            font-family: "Hiragino Sans";
             font-style: normal;
             font-weight: 200;
             font-size: 18px;
@@ -113,12 +114,12 @@
   justify-content: center;
   height: 52px;
   padding: 0 10px;
-  transition: .2s;
+  transition: 0.2s;
   @media (max-width: $breakpoint) {
     color: white;
   }
   &:hover {
-    opacity: .7;
+    opacity: 0.7;
   }
 }
 
@@ -135,15 +136,15 @@
   margin: 0;
   line-height: 52px;
   .logo {
-    font-family: 'YuMincho';
     font-style: normal;
     font-weight: 500;
     font-size: 56px;
     text-align: center;
+    height: 28px;
     letter-spacing: -15px;
   }
   .title {
-    font-family: 'YuMincho';
+    font-family: "YuMincho";
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -182,8 +183,10 @@
   height: 26px;
   cursor: pointer;
 
-  span, span::before, span::after {
-    content: '';
+  span,
+  span::before,
+  span::after {
+    content: "";
     display: inline-block;
     position: absolute;
     width: 100%;
