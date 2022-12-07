@@ -5,7 +5,6 @@ const nextConfig = {
   trailingSlash: true,
   reactStrictMode: true,
   swcMinify: true,
-  assetPrefix: "/",
 };
 
 module.exports = nextConfig;
