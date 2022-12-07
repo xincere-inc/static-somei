@@ -310,9 +310,9 @@
   width: 100%;
   min-height: 450px;
   object-fit: cover;
-  object-position: left;
   @media (max-width: $breakpoint) {
     max-height: 240px;
+    object-position: -100px;
   }
 }
 
