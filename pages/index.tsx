@@ -3,7 +3,7 @@ import { Slider, SliderItem } from "../components/Slider";
 import { CherryText } from "../components/Texts";
 import image1 from "./assets/home1.png";
 import teacher from "./assets/home_teacher.png";
-import styles from "./home.module.scss";
+import styles from "./index.module.scss";
 import card1 from "./assets/home_card_1.png";
 import card2 from "./assets/home_card_2.png";
 import card3 from "./assets/home_card_3.png";
@@ -12,25 +12,25 @@ import Link from "next/link";
 const Page = () => {
   return (
     <>
-      <section className={styles.section_top}>
+      <section className="section_top">
         <Slider>
           <SliderItem>
             <div className="container">
               <img src={image1.src} className={styles.slider_img} alt="" />
-              <div className="overlay">
+              <div className={styles.overlay}>
                 <div className={styles.overlay}>
                   <div className={styles.triangle_base}>
                     <div className={styles.triangle} />
                   </div>
                   <div className={styles.overlay_text}>
                     全科目の先生が一人の
-                    <br className={styles.with_mobile} />
+                    <br className="with_mobile" />
                     生徒状況、
-                    <br className={styles.without_mobile} />
+                    <br className="without_mobile" />
                     得意不得意、
-                    <br className={styles.with_mobile} />
+                    <br className="with_mobile" />
                     医師への資質などを
-                    <br className={styles.with_mobile} />
+                    <br className="with_mobile" />
                     情報共有していくスタイル
                   </div>
                 </div>
@@ -40,20 +40,20 @@ const Page = () => {
           <SliderItem>
             <div className="container">
               <img src={image1.src} className={styles.slider_img} alt="" />
-              <div className="overlay">
+              <div className={styles.overlay}>
                 <div className={styles.overlay}>
                   <div className={styles.triangle_base}>
                     <div className={styles.triangle} />
                   </div>
                   <div className={styles.overlay_text}>
                     全科目の先生が一人の
-                    <br className={styles.with_mobile} />
+                    <br className="with_mobile" />
                     生徒状況、
-                    <br className={styles.without_mobile} />
+                    <br className="without_mobile" />
                     得意不得意、
-                    <br className={styles.with_mobile} />
+                    <br className="with_mobile" />
                     医師への資質などを
-                    <br className={styles.with_mobile} />
+                    <br className="with_mobile" />
                     情報共有していくスタイル
                   </div>
                 </div>
@@ -63,20 +63,20 @@ const Page = () => {
           <SliderItem>
             <div className="container">
               <img src={image1.src} className={styles.slider_img} alt="" />
-              <div className="overlay">
+              <div className={styles.overlay}>
                 <div className={styles.overlay}>
                   <div className={styles.triangle_base}>
                     <div className={styles.triangle} />
                   </div>
                   <div className={styles.overlay_text}>
                     全科目の先生が一人の
-                    <br className={styles.with_mobile} />
+                    <br className="with_mobile" />
                     生徒状況、
-                    <br className={styles.without_mobile} />
+                    <br className="without_mobile" />
                     得意不得意、
-                    <br className={styles.with_mobile} />
+                    <br className="with_mobile" />
                     医師への資質などを
-                    <br className={styles.with_mobile} />
+                    <br className="with_mobile" />
                     情報共有していくスタイル
                   </div>
                 </div>
@@ -86,20 +86,20 @@ const Page = () => {
           <SliderItem>
             <div className="container">
               <img src={image1.src} className={styles.slider_img} alt="" />
-              <div className="overlay">
+              <div className={styles.overlay}>
                 <div className={styles.overlay}>
                   <div className={styles.triangle_base}>
                     <div className={styles.triangle} />
                   </div>
                   <div className={styles.overlay_text}>
                     全科目の先生が一人の
-                    <br className={styles.with_mobile} />
+                    <br className="with_mobile" />
                     生徒状況、
-                    <br className={styles.without_mobile} />
+                    <br className="without_mobile" />
                     得意不得意、
-                    <br className={styles.with_mobile} />
+                    <br className="with_mobile" />
                     医師への資質などを
-                    <br className={styles.with_mobile} />
+                    <br className="with_mobile" />
                     情報共有していくスタイル
                   </div>
                 </div>
@@ -109,20 +109,20 @@ const Page = () => {
           <SliderItem>
             <div className="container">
               <img src={image1.src} className={styles.slider_img} alt="" />
-              <div className="overlay">
+              <div className={styles.overlay}>
                 <div className={styles.overlay}>
                   <div className={styles.triangle_base}>
                     <div className={styles.triangle} />
                   </div>
                   <div className={styles.overlay_text}>
                     全科目の先生が一人の
-                    <br className={styles.with_mobile} />
+                    <br className="with_mobile" />
                     生徒状況、
-                    <br className={styles.without_mobile} />
+                    <br className="without_mobile" />
                     得意不得意、
-                    <br className={styles.with_mobile} />
+                    <br className="with_mobile" />
                     医師への資質などを
-                    <br className={styles.with_mobile} />
+                    <br className="with_mobile" />
                     情報共有していくスタイル
                   </div>
                 </div>
@@ -131,30 +131,30 @@ const Page = () => {
           </SliderItem>
         </Slider>
       </section>
-      <section className={styles.section}>
+      <section className="section">
         <div className="row">
           <div className="col-12 col-md-6">
             <img src={teacher.src} className="img" alt="" />
           </div>
           <div className="col-12 col-md-6">
-            <div className={styles.wrapper}>
+            <div className="wrapper">
               <CherryText>
-                <h2 className={styles.subtitle}>
+                <h2 className="subtitle">
                   素質に体質に合わせた
                   <br />
                   授業展開、宿題の提供
                 </h2>
               </CherryText>
-              <div className={styles.button}>
+              <div className="button">
                 <Link className="btn-primary" href="/about">
-                  <div className={styles.button_text}>詳しくみる</div>
+                  <div className="button_text">詳しくみる</div>
                 </Link>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className={`${styles.section} ${styles.section_bottom}`}>
+      <section className="section section_bottom">
         <div className="row">
           <div className="col-12 col-md-4">
             <div className="container p-3">
@@ -168,7 +168,7 @@ const Page = () => {
                     </div>
                     <div className={styles.overlay_card_button}>
                       <Link className="btn-primary" href="/curriculum">
-                        <div className={styles.button_text}>詳しくみる</div>
+                        <div className="button_text">詳しくみる</div>
                       </Link>
                     </div>
                   </div>
@@ -190,7 +190,7 @@ const Page = () => {
                     </div>
                     <div className={styles.overlay_card_button}>
                       <Link className="btn-primary" href="/curriculum">
-                        <div className={styles.button_text}>詳しくみる</div>
+                        <div className="button_text">詳しくみる</div>
                       </Link>
                     </div>
                   </div>
@@ -212,7 +212,7 @@ const Page = () => {
                     </div>
                     <div className={styles.overlay_card_button}>
                       <Link className="btn-primary" href="/curriculum">
-                        <div className={styles.button_text}>詳しくみる</div>
+                        <div className="button_text">詳しくみる</div>
                       </Link>
                     </div>
                   </div>
@@ -222,7 +222,7 @@ const Page = () => {
           </div>
         </div>
       </section>
-      <section className={`${styles.section} ${styles.bg_gray}`}>
+      <section className={`section ${styles.bg_gray}`}>
         <div className={styles.reserve}>
           <CherryText>
             <h2 className={styles.reserve_title}>
@@ -233,7 +233,7 @@ const Page = () => {
           </CherryText>
           <div className={styles.reserve_button}>
             <Link className="btn-secondary" href="/">
-              <div className={styles.button_text}>応募する</div>
+              <div className="button_text">応募する</div>
             </Link>
           </div>
           <div className={styles.reserve_contact}>
