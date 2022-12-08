@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
-			</Head>
+      </Head>
       <DefaultSeo
         defaultTitle={defaultTitle}
         description={defaultDescription}
