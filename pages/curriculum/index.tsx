@@ -6,12 +6,12 @@ import styles from "./index.module.scss";
 import card_c1 from "../assets/curriculum_card_1.png";
 import card_c2 from "../assets/curriculum_card_2.png";
 import card_c3 from "../assets/curriculum_card_3.png";
-import { CommonMeta } from "../../components/CommonMeta";
+import { NextSeo } from "next-seo";
 
 const Page = () => {
   return (
     <>
-      <CommonMeta pageTitle="授業案内" />
+      <NextSeo title="授業案内 | 私立医学部受験専門の個別指導予備校 | SOMEI合格プランナー" />
       <section className="section_top">
         <TitleImage imageSrc={Image.src} title="授業案内" />
       </section>

@@ -8,12 +8,10 @@ import card1 from "./assets/home_card_1.png";
 import card2 from "./assets/home_card_2.png";
 import card3 from "./assets/home_card_3.png";
 import Link from "next/link";
-import { CommonMeta } from "../components/CommonMeta";
 
 const Page = () => {
   return (
     <>
-      <CommonMeta />
       <section className="section_top">
         <Slider>
           <SliderItem>

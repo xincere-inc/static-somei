@@ -7,11 +7,12 @@ import Card2 from "../assets/matsumura.png";
 import Card3 from "../assets/igarashi.png";
 import { SingleLineCherryText } from "../../components/Texts";
 import { CommonMeta } from "../../components/CommonMeta";
+import { NextSeo } from "next-seo";
 
 const Page = () => {
   return (
     <>
-      <CommonMeta pageTitle="講師案内" />
+      <NextSeo title="講師案内 | 私立医学部受験専門の個別指導予備校 | SOMEI合格プランナー" />
       <section className="section_top">
         <TitleImage imageSrc={Image.src} title="講師案内" />
       </section>

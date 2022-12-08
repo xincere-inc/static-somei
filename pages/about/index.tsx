@@ -5,12 +5,12 @@ import Image from "../assets/about_title_image.png";
 import styles from "./index.module.scss";
 import card_a1 from "../assets/about_somei_1.png";
 import card_a2 from "../assets/about_somei_2.png";
-import { CommonMeta } from "../../components/CommonMeta";
+import { NextSeo } from "next-seo";
 
 const Page = () => {
   return (
     <>
-      <CommonMeta pageTitle="ソメイ塾について" />
+      <NextSeo title="ソメイ塾について | 私立医学部受験専門の個別指導予備校 | SOMEI合格プランナー" />
       <section className="section_top">
         <TitleImage imageSrc={Image.src} title="ソメイ塾について" />
       </section>
