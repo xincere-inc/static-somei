@@ -6,11 +6,13 @@ import Card1 from "../assets/sato.png";
 import Card2 from "../assets/matsumura.png";
 import Card3 from "../assets/igarashi.png";
 import { SingleLineCherryText } from "../../components/Texts";
+import { CommonMeta } from "../../components/CommonMeta";
 
 const Page = () => {
   return (
     <>
-      <section className="ection_top">
+      <CommonMeta pageTitle="講師案内" />
+      <section className="section_top">
         <TitleImage imageSrc={Image.src} title="講師案内" />
       </section>
       <section className="section">

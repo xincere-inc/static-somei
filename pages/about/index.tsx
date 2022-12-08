@@ -5,11 +5,12 @@ import Image from "../assets/about_title_image.png";
 import styles from "./index.module.scss";
 import card_a1 from "../assets/about_somei_1.png";
 import card_a2 from "../assets/about_somei_2.png";
-import card_a3 from "../assets/about_somei_3.png";
+import { CommonMeta } from "../../components/CommonMeta";
 
 const Page = () => {
   return (
     <>
+      <CommonMeta pageTitle="ソメイ塾について" />
       <section className="section_top">
         <TitleImage imageSrc={Image.src} title="ソメイ塾について" />
       </section>
