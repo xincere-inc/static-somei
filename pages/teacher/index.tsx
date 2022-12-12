@@ -6,7 +6,6 @@ import Card1 from "../assets/sato.png";
 import Card2 from "../assets/matsumura.png";
 import Card3 from "../assets/igarashi.png";
 import { SingleLineCherryText } from "../../components/Texts";
-import { CommonMeta } from "../../components/CommonMeta";
 import { NextSeo } from "next-seo";
 
 const Page = () => {
