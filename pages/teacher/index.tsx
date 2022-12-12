@@ -1,19 +1,22 @@
-import Layout from "../components/Layouts";
-import { TitleImage } from "../components/TitleImage";
-import Image from "./assets/teacher_title_image.png";
-import styles from "./home.module.scss";
-import Card1 from "./assets/sato.png";
-import Card2 from "./assets/matsumura.png";
-import Card3 from "./assets/igarashi.png";
-import { SingleLineCherryText } from "../components/Texts";
+import Layout from "../../components/Layouts";
+import { TitleImage } from "../../components/TitleImage";
+import Image from "../assets/teacher_title_image.png";
+import styles from "./index.module.scss";
+import Card1 from "../assets/sato.png";
+import Card2 from "../assets/matsumura.png";
+import Card3 from "../assets/igarashi.png";
+import { SingleLineCherryText } from "../../components/Texts";
+import { CommonMeta } from "../../components/CommonMeta";
+import { NextSeo } from "next-seo";
 
 const Page = () => {
   return (
     <>
-      <section className={styles.section_top}>
+      <NextSeo title="講師案内 | 私立医学部受験専門の個別指導予備校 | SOMEI合格プランナー" />
+      <section className="section_top">
         <TitleImage imageSrc={Image.src} title="講師案内" />
       </section>
-      <section className={styles.section}>
+      <section className="section">
         <div className={`row ${styles.teacher_row}`}>
           <div className="col-12 col-md-4">
             <img src={Card1.src} className="img" alt="" />

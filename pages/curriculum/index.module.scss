@@ -1,0 +1,27 @@
+@import "../../styles/variables";
+
+.content_img_wrapper {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding-right: 32px;
+  box-sizing: border-box;
+  @media (max-width: $breakpoint) {
+    padding-right: 0;
+  }
+}
+
+.curriculum_row {
+  padding-bottom: 36px;
+  &:nth-child(2n) {
+    flex-direction: row-reverse;
+    .content_img_wrapper {
+      padding-left: 32px;
+      padding-right: 0;
+      @media (max-width: $breakpoint) {
+        padding-left: 0;
+      }
+    }
+  }
+}
