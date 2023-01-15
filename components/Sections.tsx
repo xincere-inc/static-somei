@@ -33,22 +33,32 @@ export const Header = () => {
     );
   };
 
-  return (
-    <header className={styles.header}>
-      <div className={styles.header_content_wrapper}>
-        <Link href="/" className={styles.link}>
+  const logoElement = () => {
+    return currentUrl === "/"
+      ? <Link href="/" className={styles.link}>
           <h1 className={styles.title_wrapper}>
             <img src={card.src} className={styles.logo} alt="ロゴ" />
           </h1>
         </Link>
+      : <Link href="/" className={styles.link}>
+          <h2 className={styles.title_wrapper}>
+            <img src={card.src} className={styles.logo} alt="ロゴ" />
+          </h2>
+        </Link>
+  };
+
+  return (
+    <header className={styles.header}>
+      <div className={styles.header_content_wrapper}>
+        { logoElement() }
         <div className={styles.hamburger_menu} onClick={changeHambugerState}>
           <span className={open ? styles.clicked : ""} />
         </div>
         <nav className={open ? styles.nav_opened : styles.nav_closed}>
           <ul>
-            <li>{linkObject("/about", "ソメイ塾について")}</li>
-            <li>{linkObject("/curriculum", "授業案内")}</li>
-            <li>{linkObject("/teacher", "講師案内")}</li>
+            <li>{ linkObject("/about", "ソメイ塾について") }</li>
+            <li>{ linkObject("/curriculum", "授業案内") }</li>
+            <li>{ linkObject("/teacher", "講師案内") }</li>
           </ul>
         </nav>
       </div>
