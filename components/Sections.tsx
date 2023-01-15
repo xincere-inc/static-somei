@@ -59,7 +59,8 @@ export const Header = () => {
 export const Footer = () => {
   return (
     <footer className={styles.footer}>
-      Copyright © somei All Rights Reserved.
+      Copyright © somei All Rights Reserved.<br/>
+      <a href="https://residence.xincere.jp/" target="_blank" rel="noopener noreferrer">都内の部屋探しならシンシアレジデンス</a>
     </footer>
   );
 };

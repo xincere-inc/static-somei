@@ -157,8 +157,8 @@
 }
 
 .footer {
-  display: flex;
-  overflow: hidden;
+  display: block;
+  text-align: center;
   justify-content: center;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -166,7 +166,10 @@
   margin-top: auto;
   color: $primary;
   font-size: 12px;
-  font-family: YuGothic;
+  a {
+    text-decoration: none;
+    color: $primary;
+  }
 }
 
 .hamburger_menu {
